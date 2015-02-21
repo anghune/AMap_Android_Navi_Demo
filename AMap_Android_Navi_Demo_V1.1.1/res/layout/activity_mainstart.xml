@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+       
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/start_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/start_content_font_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black" >
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/base_function"
+        android:textColor="@color/black"
+        android:textSize="@dimen/start_content_font_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black" >
+    </View>
+
+    <TextView
+        android:id="@+id/main_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/setting_margin_top"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/message_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/start_content_font_size" 
+        android:background="@drawable/startborder"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+        android:background="@color/black" >
+    </View>
+
+    
+
+    <TextView
+        android:id="@+id/main_records"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+         
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/setting_margin_top"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/record_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/start_content_font_size" 
+         android:background="@drawable/startborder"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+        android:background="@color/black" >
+    </View>
+
+    <TextView
+        android:id="@+id/main_navi"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+        
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/setting_margin_top"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        
+        android:text="@string/complex_function"
+        android:textColor="@color/black"
+        android:textSize="@dimen/start_content_font_size" 
+         android:background="@drawable/startborder"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/navibar_start_left"
+        android:background="@color/black" >
+    </View>
+
+</LinearLayout>

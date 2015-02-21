@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_margin_bottom" >
+
+        <ImageView
+            android:id="@+id/setting_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/setting"
+            android:textColor="@color/black"
+            android:textSize="@dimen/titletext_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/daynightmode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/day_night_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dayratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/day"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/nightradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/night"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+          android:gravity="center_vertical"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:text="@string/deviationrecalculation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/deviation_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/deviationyesradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/yes"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/deviationnoradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:text="@string/jamrecalculation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/jam_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/jam_yes_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/yes"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/jam_no_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:text="@string/trafficbroadcast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/traffic_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+          android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/trafficyesradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/open"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/trafficnoradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:text="@string/camerabroadcast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/camera_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/camerayesradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/open"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/cameranoradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:layout_marginLeft="@dimen/navibar_margin_left"
+        android:layout_marginRight="@dimen/navibar_margin_right"
+        android:layout_marginTop="@dimen/setting_margin_top"
+        android:background="@drawable/whiteborder" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:text="@string/screenon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navisetting_subtext_size" />
+
+        <RadioGroup
+            android:id="@+id/screen_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/screenonradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:checked="true"
+                android:text="@string/yes"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/screenoffradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
