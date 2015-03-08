@@ -1,8 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0e0e0"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="联系人姓名"/>
+        <TextView 
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="电话号码"/>
+    </LinearLayout>
+        
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="119.29"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView11"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView12"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView13"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:ems="10" >
+            </AutoCompleteTextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="        "
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp" />
+
+                <TextView
+                    android:id="@+id/teltphoneone"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/teltphonetwo"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:id="@+id/teltphonethree"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+         >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"/>
+
+        <Button 
+            android:id="@+id/button"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="保存"
+            />"
+
+    </LinearLayout>
 
 </LinearLayout>

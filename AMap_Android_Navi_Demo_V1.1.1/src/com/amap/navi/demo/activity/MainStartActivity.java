@@ -23,7 +23,7 @@ public class MainStartActivity extends Activity implements OnClickListener{
 
 	private TextView recordsView;
 	private TextView naviView;
-	
+	public Intent intent=new Intent("AMap");
 	
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -45,7 +45,12 @@ public class MainStartActivity extends Activity implements OnClickListener{
 		AMapNavi.getInstance(this).setAMapNaviListener(ttsManager);// 设置语音模块播报
 	}
 	
-	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		startService(intent);
+		super.onResume();
+	}
 	
 	/**
 	 * 返回键处理事件
